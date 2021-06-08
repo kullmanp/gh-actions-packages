@@ -3,7 +3,7 @@
 
     <groupId>ch.kup</groupId>
     <artifactId>gh-actions-packages</artifactId>
-    <version>0.0.6-SNAPSHOT</version>
+    <version>0.0.6</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -52,7 +52,7 @@
     <scm>
         <connection>scm:git:https://github.com/kullmanp/gh-actions-packages.git</connection>
         <url>https://github.com/kullmanp/gh-actions-packages.git</url>
-        <tag>v0.0.1</tag>
+        <tag>v0.0.6</tag>
     </scm>
 
     <distributionManagement>
