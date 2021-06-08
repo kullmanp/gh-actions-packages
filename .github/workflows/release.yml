@@ -13,6 +13,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@master # don't get confused by @master - it is the version of the checkout action. You repo will be checked out with ${{ github.ref }}
+      - name: Set up JDK 14
+        uses: actions/setup-java@v2
+        with:
+          java-version: '14'
+          distribution: 'adopt'
+          server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
+          settings-path: ${{ github.workspace }} # location for the settings.xml file
       - name: Deploy to Github Package Registry
         env:
             GITHUB_USERNAME: x-access-token
