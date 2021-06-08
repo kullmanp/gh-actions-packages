@@ -1,0 +1,14 @@
+name: Maven Release
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Java Maven release
+        uses: qcastel/github-actions-maven-release@v1.12.12
